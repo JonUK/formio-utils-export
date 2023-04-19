@@ -1,13 +1,16 @@
-const path = require("path");
+const {resolve} = require('path');
 
 module.exports = {
   mode: "development",
-  entry: [
-    "core"
-  ],
+  entry: './app.js',
+  experiments: {
+    outputModule: true
+  },
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: resolve(__dirname, './dist'),
+    filename: 'formio-utils-export.js',
+    libraryTarget: 'module',
+    clean: true
   },
   module: {
     rules: [
@@ -18,7 +21,7 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: [
-              ["@babel/preset-env"]
+              ["@babel/preset-env", { modules: false }]
             ]
           },
         },
