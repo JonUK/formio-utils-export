@@ -1,8 +1,12 @@
 {
   "name": "formio-utils-export",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "formio-utils-export",
-  "main": "dist/formio-utils-export.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "directories": {
+    "dist": "dist"
+  },
   "scripts": {
     "dev": "webpack --watch --mode development",
     "build": "webpack --mode development",

@@ -2,13 +2,15 @@ const {resolve} = require('path');
 
 module.exports = {
   mode: "development",
-  entry: './app.js',
+  entry: {
+    'index': './testCalculator.js',
+    'formiojsUtils': './formiojsUtils.js'
+  },
   experiments: {
     outputModule: true
   },
   output: {
     path: resolve(__dirname, './dist'),
-    filename: 'formio-utils-export.js',
     libraryTarget: 'module',
     clean: true
   },
