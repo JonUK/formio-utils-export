@@ -1,9 +1,9 @@
 {
   "name": "formio-utils-export",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "formio-utils-export",
   "main": "dist/index.mjs",
-  "module": "dist/index.mjs",
+  "module": "testCalculator.js",
   "directories": {
     "dist": "dist"
   },
