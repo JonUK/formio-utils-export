@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false // Don't convert ES6 modules to CommonJS
+          }
+        ]
+      ]
+    },
+    "cjs": {
+      "presets": [
+        [
+          "@babel/preset-env"
+        ]
+      ]
+    }
+  }
+}
